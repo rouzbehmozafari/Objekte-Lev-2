@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+    </header>
+<!-- MAIN -->
+    <main>
+        <!-- <table id= table1>
+            <tr>
+                <th>Name</th>
+                <th>preiseGramEuro</th>
+                <th>veraenderung</th>
+            </tr>
+            
+        </table> -->
+
+         <!-- 2 -->
+
+
+    </main>
+<!-- FOOTER -->
+    <footer>
+    </footer>
+<!-- SCRIPT -->
+    <script>
+        // let edelMetallPreise = [
+        // { name: "Gold", preiseGramEuro: 42.91, veraenderung: "+0.12%" },
+        // { name: "Silber", preiseGramEuro: 0.51, veraenderung: "+1.02%" },
+        // { name: "Platin", preiseGramEuro: 25.74, veraenderung: "+0.41%" },
+        // { name: "Palladium", preiseGramEuro: 50.93, veraenderung: "0.00%" },
+        // { name: "Rhodium", preiseGramEuro: 160.12, veraenderung: "-0.10%" },
+        // { name: "Iridium", preiseGramEuro: 42.84, veraenderung: "0.00%" },
+        // { name: "Ruthenium", preiseGramEuro: 7.36, veraenderung: "0.00%" },
+        // { name: "Rhenium", preiseGramEuro: 37.22, veraenderung: "-0.53%" },
+        // { name: "Osmium", preiseGramEuro: 11.54, veraenderung: "0.00%" }
+        // ];
+        // let names = []
+        // edelMetallPreise.forEach(i => names.push(i.name))
+        // console.log(names)
+        // let narr = edelMetallPreise.map(i => i.name)
+        // console.log(narr)
+        // let farr1 = []
+        // let farr = edelMetallPreise.forEach(i => farr1.push(i.preiseGramEuro))
+        // console.log(farr1)
+        // let ver1 = []
+        // edelMetallPreise.forEach(i => ver1.push(i.veraenderung))
+        // console.log(ver1)
+        // let nver = edelMetallPreise.map(i => i.veraenderung)
+        // console.log(nver)
+        // let nt = edelMetallPreise.filter(i => i.preiseGramEuro > 50)
+        // console.log(nt)
+
+        // let table1 = document.getElementById('table1')
+
+        // function tabb() {
+        //     for (i of edelMetallPreise) {
+        //         table1.innerHTML += `<tr><td>${i.name}</td><td>${i.preiseGramEuro}</td><td>${i.veraenderung}</td></tr>`
+        //     }
+        // }
+        // tabb()
+
+        // 2
+
+        const singers = [
+            { name: 'The Beatles', country: 'United Kingdom', period_active: { start: 1960, end: 1970 }, genre: "Rock / Pop" },
+            { name: 'Elvis Presley', country: 'United States', period_active: { start: 1954, end: 1977 }, genre: "Rock and roll" },
+            { name: 'Michael Jackson', country: 'United States', period_active: { start: 1964, end: 2009 }, genre: "Pop / Rock / Dance / Soul / R&B"},
+            { name: 'Elton John', country: 'United Kingdom', period_active: { start: 1964, end: "present" }, genre: "Pop / Rock"},
+            { name: 'Madonna', country: 'United States', period_active: { start: 1979, end: "present" }, genre: "Pop / Dance / Electronica"},
+            { name: 'Led Zeppelin', country: 'United Kingdom', period_active: { start: 1968, end: 1980 }, genre: "Hard rock / Blues rock / Folk rock"},
+            { name: 'Rihanna', country: 'United States', period_active: { start: 2005, end: "present" }, genre: "R&B / Pop / Dance / Hip-hop"},
+            { name: 'Pink Floyd', country: 'United Kingdom', period_active: { start: 1965, end: 1996, extra: 2014 }, genre: "Progressive rock / Psychedelic rock"},
+        ];
+        
+        let sorted = (singers.map(i => i.name)).sort()
+        console.log(sorted)
+        let ne = []
+        for (i of sorted) {
+            for (x of singers){
+                if (i==x.name){
+                    ne.push(x)
+                }
+            }
+        }
+        console.log(ne)
+
+
+    </script>
+</body>
+</html>
